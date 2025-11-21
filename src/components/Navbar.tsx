@@ -27,7 +27,7 @@ const Navbar = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 py-5 flex items-center justify-between">
+      <div className="container mx-auto px-6 py-6 flex items-center justify-between">
         <button
           onClick={() => scrollToSection("hero")}
           className="font-serif text-xl md:text-2xl text-foreground hover:text-muted-foreground transition-colors duration-300"
@@ -35,7 +35,7 @@ const Navbar = () => {
           drafts of heart
         </button>
 
-        <div className="flex items-center gap-6 md:gap-8">
+        <div className="flex items-center gap-4 md:gap-10">
           <Button
             variant="ghost"
             onClick={() => scrollToSection("excerpts")}
