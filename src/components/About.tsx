@@ -1,32 +1,23 @@
-import { Card } from "@/components/ui/card";
-
 const About = () => {
   return (
-    <section id="about" className="py-24 bg-background">
+    <section id="about" className="py-16 md:py-20 bg-secondary/30">
       <div className="container mx-auto px-6">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-5xl md:text-6xl font-serif font-medium mb-16 text-center">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-serif mb-8">
             About
           </h2>
 
-          <Card className="p-8 md:p-12 bg-card border-2 border-border">
-            <div className="prose prose-lg max-w-none">
-              <p className="text-lg text-foreground leading-relaxed mb-6">
-                Welcome to my literary haven. Here, I capture fragments of emotion, 
-                fleeting moments, and the quiet beauty found in everyday life.
-              </p>
-              <p className="text-lg text-foreground leading-relaxed mb-6">
-                Through poetry and prose, I explore the depths of human connection, 
-                the ache of memory, and the tender spaces between words left unsaid.
-              </p>
-              <p className="text-lg text-muted-foreground italic text-center mt-8">
-                ps i love you.
-              </p>
-            </div>
-          </Card>
+          <div className="bg-card p-8 md:p-10 border border-border/30">
+            <p className="text-base md:text-lg text-foreground leading-relaxed mb-4">
+              add about
+            </p>
+            <p className="text-sm text-muted-foreground italic mt-6">
+              ps i love you.
+            </p>
+          </div>
 
-          <div className="mt-12 text-center">
-            <p className="text-sm text-muted-foreground font-light tracking-wide">
+          <div className="mt-8">
+            <p className="text-sm text-muted-foreground">
               photograph here
             </p>
           </div>
