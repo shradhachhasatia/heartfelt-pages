@@ -31,9 +31,9 @@ const ExcerptCard = ({ excerpt, index }: { excerpt: typeof excerpts[0]; index: n
       initial={{ opacity: 0, y: 50 }}
       animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="bg-card p-6 md:p-8 border border-border/30 hover:border-border/60 transition-all duration-300 hover:shadow-sm"
+      className="bg-card p-8 md:p-10 border border-border/30 hover:border-border/60 transition-all duration-300"
     >
-      <p className="text-base md:text-lg text-foreground leading-relaxed italic mb-4">
+      <p className="text-lg md:text-xl text-foreground leading-relaxed italic mb-6">
         "{excerpt.text}"
       </p>
       <p className="text-xs text-muted-foreground font-light tracking-wider uppercase">
@@ -45,13 +45,13 @@ const ExcerptCard = ({ excerpt, index }: { excerpt: typeof excerpts[0]; index: n
 
 const Excerpts = () => {
   return (
-    <section id="excerpts" className="py-16 md:py-20 bg-background">
+    <section id="excerpts" className="py-32 bg-background">
       <div className="container mx-auto px-6">
-        <h2 className="text-4xl md:text-5xl font-serif mb-12 text-center">
-          Excerpts
+        <h2 className="text-5xl md:text-6xl font-serif mb-20 text-center tracking-tight">
+          poetry
         </h2>
 
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
           {excerpts.map((excerpt, index) => (
             <ExcerptCard key={index} excerpt={excerpt} index={index} />
           ))}

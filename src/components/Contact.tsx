@@ -24,17 +24,17 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-20 bg-background">
+    <section id="contact" className="py-32 bg-background">
       <div className="container mx-auto px-6">
         <div className="max-w-xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif mb-3 text-center">
-            Get in Touch
+          <h2 className="text-5xl md:text-6xl font-serif mb-6 text-center tracking-tight">
+            contact
           </h2>
-          <p className="text-center text-muted-foreground mb-10 text-sm">
-            Let's connect
+          <p className="text-center text-muted-foreground mb-16 text-base font-light">
+            let's connect
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-5 bg-card p-8 border border-border/30">
+          <form onSubmit={handleSubmit} className="space-y-6 bg-card p-10 border border-border/30">
             <div className="space-y-2">
               <label htmlFor="name" className="text-sm text-foreground">
                 Name
