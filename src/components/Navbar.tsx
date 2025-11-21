@@ -21,40 +21,39 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-border shadow-sm"
+          ? "bg-background/90 backdrop-blur-sm border-b border-border/30"
           : "bg-transparent"
       }`}
     >
-      <div className="container mx-auto px-6 py-6 flex items-center justify-between">
+      <div className="container mx-auto px-6 py-5 flex items-center justify-between">
         <button
           onClick={() => scrollToSection("hero")}
-          className="font-serif text-2xl font-medium text-foreground hover:text-accent transition-colors duration-300"
+          className="font-serif text-xl md:text-2xl text-foreground hover:text-muted-foreground transition-colors duration-300"
         >
           drafts of heart
-          <div className="h-[2px] w-16 bg-accent mt-1 rounded-full" />
         </button>
 
-        <div className="flex items-center gap-8">
+        <div className="flex items-center gap-6 md:gap-8">
           <Button
             variant="ghost"
             onClick={() => scrollToSection("excerpts")}
-            className="font-light tracking-wide hover:text-accent transition-colors duration-300"
+            className="text-sm font-light tracking-wide hover:text-muted-foreground transition-colors duration-300 px-2 md:px-4"
           >
             POETRY
           </Button>
           <Button
             variant="ghost"
             onClick={() => scrollToSection("about")}
-            className="font-light tracking-wide hover:text-accent transition-colors duration-300"
+            className="text-sm font-light tracking-wide hover:text-muted-foreground transition-colors duration-300 px-2 md:px-4"
           >
             ABOUT
           </Button>
           <Button
             variant="ghost"
             onClick={() => scrollToSection("contact")}
-            className="font-light tracking-wide hover:text-accent transition-colors duration-300"
+            className="text-sm font-light tracking-wide hover:text-muted-foreground transition-colors duration-300 px-2 md:px-4"
           >
             CONTACT
           </Button>
