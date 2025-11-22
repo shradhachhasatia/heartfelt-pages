@@ -44,7 +44,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
-                className="border-border/30 focus:border-border transition-colors"
+                className="bg-white dark:bg-white border-2 border-primary focus:border-primary text-foreground dark:text-black placeholder:text-muted-foreground dark:placeholder:text-gray-500"
               />
             </div>
 
@@ -58,7 +58,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
-                className="border-border/30 focus:border-border transition-colors"
+                className="bg-white dark:bg-white border-2 border-primary focus:border-primary text-foreground dark:text-black placeholder:text-muted-foreground dark:placeholder:text-gray-500"
               />
             </div>
 
@@ -72,7 +72,7 @@ const Contact = () => {
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 required
                 rows={5}
-                className="border-border/30 focus:border-border transition-colors resize-none"
+                className="bg-white dark:bg-white border-2 border-primary focus:border-primary text-foreground dark:text-black placeholder:text-muted-foreground dark:placeholder:text-gray-500 resize-none"
               />
             </div>
 
