@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const excerpts = [
   {
@@ -132,22 +131,6 @@ const PoetryCarousel = () => {
               </motion.div>
             </AnimatePresence>
           </div>
-
-          {/* Navigation Buttons */}
-          <button
-            onClick={() => paginate(-1)}
-            className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 z-10 bg-card/90 backdrop-blur-sm border border-border/50 rounded-full p-3 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 group shadow-lg"
-            aria-label="Previous excerpt"
-          >
-            <ChevronLeft className="w-6 h-6 text-foreground group-hover:text-primary transition-colors" />
-          </button>
-          <button
-            onClick={() => paginate(1)}
-            className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 z-10 bg-card/90 backdrop-blur-sm border border-border/50 rounded-full p-3 hover:bg-primary/10 hover:border-primary/50 transition-all duration-300 group shadow-lg"
-            aria-label="Next excerpt"
-          >
-            <ChevronRight className="w-6 h-6 text-foreground group-hover:text-primary transition-colors" />
-          </button>
 
           {/* Pagination Dots */}
           <div className="flex justify-center gap-3 mt-12">
