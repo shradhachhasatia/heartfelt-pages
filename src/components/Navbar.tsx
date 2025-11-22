@@ -35,25 +35,25 @@ const Navbar = () => {
           drafts of heart
         </button>
 
-        <div className="flex items-center gap-4 md:gap-10">
+        <div className="flex items-center gap-6 md:gap-16">
           <Button
             variant="ghost"
             onClick={() => scrollToSection("excerpts")}
-            className="text-sm font-light tracking-wide hover:text-muted-foreground transition-colors duration-300 px-2 md:px-4"
+            className="text-sm font-light tracking-wide hover:text-muted-foreground transition-colors duration-300 px-4 md:px-6"
           >
             POETRY
           </Button>
           <Button
             variant="ghost"
             onClick={() => scrollToSection("about")}
-            className="text-sm font-light tracking-wide hover:text-muted-foreground transition-colors duration-300 px-2 md:px-4"
+            className="text-sm font-light tracking-wide hover:text-muted-foreground transition-colors duration-300 px-4 md:px-6"
           >
             ABOUT
           </Button>
           <Button
             variant="ghost"
             onClick={() => scrollToSection("contact")}
-            className="text-sm font-light tracking-wide hover:text-muted-foreground transition-colors duration-300 px-2 md:px-4"
+            className="text-sm font-light tracking-wide hover:text-muted-foreground transition-colors duration-300 px-4 md:px-6"
           >
             CONTACT
           </Button>
