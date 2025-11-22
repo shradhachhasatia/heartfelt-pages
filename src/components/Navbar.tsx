@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="container mx-auto px-6 py-6 flex items-center justify-between">
         <button
           onClick={() => scrollToSection("hero")}
-          className="font-serif text-xl md:text-2xl text-foreground hover:text-muted-foreground transition-colors duration-300"
+          className="font-serif text-lg md:text-xl text-muted-foreground/60 hover:text-foreground transition-colors duration-300"
         >
           drafts of heart
         </button>
