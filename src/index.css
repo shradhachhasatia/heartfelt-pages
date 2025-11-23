@@ -1,3 +1,8 @@
+/* Hide Lovable badge */
+#lovable-badge {
+  display: none !important;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -105,3 +110,5 @@ All colors MUST be HSL.
 
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Inter:wght@300;400;500&display=swap');
+```
+
