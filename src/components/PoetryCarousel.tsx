@@ -117,7 +117,7 @@ const PoetryCarousel = () => {
                   {/* Content */}
                   <div className="relative z-10 text-center">
                     <p className="text-xl md:text-2xl text-foreground leading-relaxed italic mb-8 font-serif">
-                      "{excerpts[currentIndex].text}"
+                      {excerpts[currentIndex].text}
                     </p>
                     <p className="text-sm text-muted-foreground font-light tracking-wider uppercase">
                       {excerpts[currentIndex].date}

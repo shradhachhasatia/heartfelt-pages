@@ -4,11 +4,11 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   const socialLinks = [
-    { icon: FaInstagram, href: "https://instagram.com", label: "Instagram", name: "instagram" },
-    { icon: FaPinterest, href: "https://pinterest.com", label: "Pinterest", name: "pinterest" },
-    { icon: FaGoodreads, href: "https://goodreads.com", label: "Goodreads", name: "goodreads" },
-    { icon: SiSubstack, href: "https://substack.com", label: "Substack", name: "substack" },
-    { icon: FaSpotify, href: "https://spotify.com", label: "Spotify", name: "spotify" },
+    { icon: FaInstagram, href: "https://www.instagram.com/draftsofheart?igsh=MTByeGc2dGkwZW8xeA==", label: "Instagram", name: "instagram" },
+    { icon: FaPinterest, href: "https://pin.it/4dsSOfba5", label: "Pinterest", name: "pinterest" },
+    { icon: FaGoodreads, href: "https://www.goodreads.com/user/show/194221783-aaradhya", label: "Goodreads", name: "goodreads" },
+    { icon: SiSubstack, href: "https://substack.com/@draftsofheart?r=6a5tn9&utm_medium=ios&utm_source=profile", label: "Substack", name: "substack" },
+    { icon: FaSpotify, href: "https://open.spotify.com/user/31j45xuugijhcgfa633t22ghqfge?si=vo_Dte0GS_GLiv_IICeZ4w", label: "Spotify", name: "spotify" },
   ];
 
   return (
