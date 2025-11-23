@@ -16,11 +16,16 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Using mailto as a simple solution
+    const subject = encodeURIComponent(`Message from ${formData.name}`);
+    const body = encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`);
+    window.location.href = `mailto:draftsofheart@gmail.com?subject=${subject}&body=${body}`;
+
     setTimeout(() => {
-      toast.success("Thank you for reaching out! I'll get back to you soon.");
+      toast.success("Opening your email client...");
       setFormData({ name: "", email: "", message: "" });
       setIsSubmitting(false);
-    }, 1000);
+    }, 500);
   };
 
   return (
@@ -44,7 +49,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                 required
-                className="bg-white dark:bg-white border-2 border-primary focus:border-primary text-foreground dark:text-black placeholder:text-muted-foreground dark:placeholder:text-gray-500"
+                className="bg-white dark:bg-white border border-muted-foreground/20 focus:border-primary/50 text-foreground dark:text-black placeholder:text-muted-foreground dark:placeholder:text-gray-500"
               />
             </div>
 
@@ -58,7 +63,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                 required
-                className="bg-white dark:bg-white border-2 border-primary focus:border-primary text-foreground dark:text-black placeholder:text-muted-foreground dark:placeholder:text-gray-500"
+                className="bg-white dark:bg-white border border-muted-foreground/20 focus:border-primary/50 text-foreground dark:text-black placeholder:text-muted-foreground dark:placeholder:text-gray-500"
               />
             </div>
 
@@ -72,7 +77,7 @@ const Contact = () => {
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                 required
                 rows={5}
-                className="bg-white dark:bg-white border-2 border-primary focus:border-primary text-foreground dark:text-black placeholder:text-muted-foreground dark:placeholder:text-gray-500 resize-none"
+                className="bg-white dark:bg-white border border-muted-foreground/20 focus:border-primary/50 text-foreground dark:text-black placeholder:text-muted-foreground dark:placeholder:text-gray-500 resize-none"
               />
             </div>
 
