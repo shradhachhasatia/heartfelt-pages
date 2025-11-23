@@ -18,7 +18,7 @@ const About = () => {
             </div>
 
             <div className="flex items-center justify-center">
-              <div className="w-full aspect-square bg-muted/20 border border-border/30 flex items-center justify-center">
+              <div className="w-full aspect-square rounded-full bg-muted/20 border border-border/30 flex items-center justify-center overflow-hidden">
                 <p className="text-sm text-muted-foreground font-light">
                   photograph here
                 </p>

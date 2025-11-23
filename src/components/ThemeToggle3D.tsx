@@ -23,19 +23,19 @@ const ThemeToggle3D = () => {
 
   return (
     <div className="fixed top-24 right-6 z-50">
-      <div className="relative flex items-center gap-2 bg-card/95 backdrop-blur-md border border-border/60 rounded-full p-1.5 shadow-2xl">
+      <div className="relative flex items-center gap-1.5 bg-card/95 backdrop-blur-md border border-border/60 rounded-full p-1 shadow-lg">
         {/* Sliding background indicator */}
         <div
-          className="absolute top-1.5 h-[calc(100%-12px)] w-[calc(50%-6px)] bg-gradient-to-br from-primary to-primary/80 rounded-full shadow-lg transition-all duration-300 ease-out"
+          className="absolute top-1 h-[calc(100%-8px)] w-[calc(50%-4px)] bg-gradient-to-br from-primary to-primary/80 rounded-full shadow-md transition-all duration-300 ease-out"
           style={{
-            left: theme === "light" ? "6px" : "calc(50% + 0px)",
+            left: theme === "light" ? "4px" : "calc(50% + 0px)",
             transform: theme === "light" ? "none" : "translateX(0)",
           }}
         />
 
         <button
           onClick={() => toggleTheme("light")}
-          className={`relative z-10 flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 ${
+          className={`relative z-10 flex items-center justify-center w-8 h-8 rounded-full transition-all duration-300 ${
             theme === "light"
               ? "text-primary-foreground scale-105"
               : "text-muted-foreground hover:text-foreground hover:scale-105"
@@ -46,12 +46,12 @@ const ThemeToggle3D = () => {
           }}
           aria-label="Light mode"
         >
-          <Sun className={`w-5 h-5 transition-all duration-300 ${theme === "light" ? "rotate-0" : "rotate-90"}`} />
+          <Sun className={`w-4 h-4 transition-all duration-300 ${theme === "light" ? "rotate-0" : "rotate-90"}`} />
         </button>
         
         <button
           onClick={() => toggleTheme("dark")}
-          className={`relative z-10 flex items-center justify-center w-12 h-12 rounded-full transition-all duration-300 ${
+          className={`relative z-10 flex items-center justify-center w-8 h-8 rounded-full transition-all duration-300 ${
             theme === "dark"
               ? "text-primary-foreground scale-105"
               : "text-muted-foreground hover:text-foreground hover:scale-105"
@@ -62,7 +62,7 @@ const ThemeToggle3D = () => {
           }}
           aria-label="Dark mode"
         >
-          <Moon className={`w-5 h-5 transition-all duration-300 ${theme === "dark" ? "rotate-0" : "-rotate-90"}`} />
+          <Moon className={`w-4 h-4 transition-all duration-300 ${theme === "dark" ? "rotate-0" : "-rotate-90"}`} />
         </button>
       </div>
     </div>
